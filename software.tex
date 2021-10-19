@@ -1,0 +1,193 @@
+\documentclass{article}
+\usepackage[cm]{fullpage}
+\usepackage{color}
+\usepackage{hyperref}
+
+\hypersetup{breaklinks=true,%
+% pagecolor=white,%
+colorlinks=true,%
+linkcolor=cyan,%
+urlcolor=MyDarkBlue}
+
+\definecolor{MyDarkBlue}{rgb}{0,0.0,0.45}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Formatting parameters  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newlength{\tabin}
+\setlength{\tabin}{1em}
+\newlength{\secsep}
+\setlength{\secsep}{0.1cm}
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{0in}
+\setlength{\itemsep}{0in}
+\setlength{\topsep}{0in}
+\setlength{\tabcolsep}{0in}
+
+\definecolor{contactgray}{gray}{0.3}
+\pagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Template Definitions  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\lineunder}{\vspace*{-8pt} \\ \hspace*{-6pt} \hrulefill \\ \vspace*{-15pt}}
+\newcommand{\name}[1]{\begin{center}\textsc{\Huge#1}\\\end{center}}
+\newcommand{\program}[1]{\begin{center}\textsc{#1}\end{center}}
+\newcommand{\contact}[1]{\begin{center}\color{contactgray}{\small#1}\end{center}}
+
+\newenvironment{tabbedsection}[1]{
+  \begin{list}{}{
+      \setlength{\itemsep}{0pt}
+      \setlength{\labelsep}{0pt}
+      \setlength{\labelwidth}{0pt}
+      \setlength{\leftmargin}{\tabin}
+      \setlength{\rightmargin}{\tabin}
+      \setlength{\listparindent}{0pt}
+      \setlength{\parsep}{0pt}
+      \setlength{\parskip}{0pt}
+      \setlength{\partopsep}{0pt}
+      \setlength{\topsep}{#1}
+    }
+  \item[]
+}{\end{list}}
+
+\newenvironment{nospacetabbing}{
+    \begin{tabbing}
+}{\end{tabbing}\vspace{-1.2em}}
+
+\newenvironment{resume_header}{}{\vspace{0pt}}
+
+
+\newenvironment{resume_section}[1]{
+  \filbreak
+  \vspace{2\secsep}
+  \textsc{\large#1}
+  \lineunder
+  \begin{tabbedsection}{\secsep}
+}{\end{tabbedsection}}
+
+\newenvironment{resume_subsection}[2][]{
+  \textbf{#2} \hfill {\footnotesize #1} \hspace{2em}
+  \begin{tabbedsection}{0.5\secsep}
+}{\end{tabbedsection}}
+
+\newenvironment{subitems}{
+  \renewcommand{\labelitemi}{-}
+  \begin{itemize}
+      \setlength{\labelsep}{1em}
+}{\end{itemize}}
+
+\newenvironment{resume_employer}[4]{
+  \vspace{\secsep}
+  \textbf{#1} \\ 
+  \indent {\small #2} \hfill {\footnotesize#3 (#4)}
+  \begin{tabbedsection}{0pt}
+  \begin{subitems}
+}{\end{subitems}\end{tabbedsection}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Start Document     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{resume_header}
+\name{Marcus Lee}
+\program{Honours Bachelor of Computer Science -- Software Engineering Major}
+\contact{\href{mailto:marcustutorial@hotmail.com}{marcustutorial@hotmail.com} \hspace{2cm} \href{tel:+60163066883}{+60 16-306 6883} \hspace{2cm}\href{https://www.linkedin.com/in/geminimarcus}{LinkedIn} \hspace{2cm}\href{https://github.com/marcustut}{GitHub} }
+\end{resume_header}
+
+\begin{resume_section}{About Me}
+  \begin{nospacetabbing}
+
+  \textbf{Technical Skills}  \= Go, TypeScript, React, SQL, C/C++, Python, Java, Unix/Linux, Rust (learning)\\*
+  \textbf{Languages} \> Fluent in English and Chinese; Conversational Proficiency in Malay\\*
+  \textbf{...} \> ...\\*
+  \textbf{Interests} \> Programming, Basketball, Cinematography\\*
+  \end{nospacetabbing}
+
+\end{resume_section}
+
+\begin{resume_section}{Work Experience}
+  \begin{resume_employer}{LS Smart Machinery}{Full-Stack Software Engineer, Tech Team}{Kuala Lumpur, MY}{January 2021 - Current}
+    \item Designed the system infrastructure for a new e-commerce application
+    \item Managed a team of two software engineering interns throughout the project
+    \item Helped setting up the CI/CD pipeline through GitHub Actions and AWS
+    \item Set up the backend with Go and PostgreSQL, frontend with React, and GraphQL as the communication interface
+  \end{resume_employer}
+\end{resume_section}
+
+
+\begin{resume_section}{Competitions and Personal Projects}
+  \begin{resume_subsection}[(October 2021 - Current)]{\href{https://github.com/marcustut/fyp}{Online Slides Generator and Editor}}
+  \begin{subitems}
+    \item Development is still undergoing, responsible for building the backend services for authentication, realtime document-syncing, sharable link generator in Rust and Actix
+    \item Implementing the frontend UI with React and using GraphQL as the communication interface
+    \end{subitems}
+  \end{resume_subsection}
+
+
+  \begin{resume_subsection}[(October 2021 - Current)]{\href{https://github.com/marcustut/thebox}{TheBox Online Event}}
+  \begin{subitems}
+    \item Developed the backend in Go and PostgreSQL to support team registration, mission delegation and realtime game interaction. GraphQL is used as the communication interface
+    \item Implemented the frontend UI for event launching, central hub and leaderboard with React and THREE.js
+    \end{subitems}
+  \end{resume_subsection}
+
+  \begin{resume_subsection}[(September 2021 - October 2021)]{\href{https://github.com/marcustut/summarize}{AI Text Summarizer}}
+  \begin{subitems}
+    \item Implemented few extractive summarization algorithms in Python for effectively summarizing a long text
+    \item Developed the backend API in Python and FastAPI whereas the frontend was using Vue and TypeScript
+    \end{subitems}
+  \end{resume_subsection}
+
+  \begin{resume_subsection}[(October 2020 - November 2020)]{\href{https://www.qwiklabs.com/public_profiles/d668c6be-b102-411f-8c49-512de455899f}{GCPBoleh Season 2}}
+  \begin{subitems}
+    \item Completed 10 labs of Google Cloud Platform training labs and learned various cloud technologies including Cloud SQL, Cloud Run, Google Kubernetes Engine (GKE) and Cloud AutoML
+    \end{subitems}
+  \end{resume_subsection}
+
+  \begin{resume_subsection}[(August 2021)]{\href{https://github.com/marcustut/mentu-lxs}{MentuLXS PWA}}
+    \begin{subitems}
+        \item Developed a Progressive Web App (PWA) for a church's online training camp
+        \item Used Go, Vue, TypeScript and Firebase for the development
+    \end{subitems}
+  \end{resume_subsection}
+
+  \begin{resume_subsection}[(May 2020 - June 2020)]{\href{https://github.com/marcustut/UnlockProject}{Unlock Youth Online Web Portal}}
+    \begin{subitems}
+    \item Developed a web portal and a discord bot for more than 1,000 particpants
+    \item Django and PostgreSQL are used on the backend, application is deployed on Google App Engine
+    \end{subitems}
+  \end{resume_subsection}
+  
+  \begin{resume_subsection}[(March 2020 - April 2020)]{\href{https://drive.google.com/drive/folders/1PXG8UBWxGFG66U_oSWwOouJDr8cWGGAu?usp=sharing}{Google Code Jam 2020 \& Kick Start 2020}}
+    \begin{subitems}
+    \item Advanced to Round 1 in Code Jam and Round B in Kick Start
+    \end{subitems}
+  \end{resume_subsection}
+\end{resume_section}
+
+
+\begin{resume_section}{Education}
+  \begin{resume_subsection}[Kuala Lumpur, MY (2019--Present)]{Tunku Abdul Rahman University College}
+    \begin{subitems}
+      \item Honours Bachelor of Computer Science in Software Engineering
+      \item Current CGPA: 3.78
+      \item Honors: Dean's Honours List
+    \end{subitems}
+  \end{resume_subsection}
+  
+  \begin{resume_subsection}[Online (2020--2021)]{\href{https://drive.google.com/file/d/1-tVq-vD20YwCcI3YgotgKKe_UYvHTwBj/view?usp=sharing}{CS50x Introduction to Computer Science}}
+    \begin{subitems}
+      \item Finished 10 problem sets, ten labs and 1 final project
+      \item Learned about C, Data Structures and Algorithms, SQL, iOS Development and others
+     \end{subitems}
+  \end{resume_subsection}
+\end{resume_section}
+
+\end{document}
