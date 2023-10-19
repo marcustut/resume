@@ -97,14 +97,14 @@ urlcolor=MyDarkBlue}
 
 \begin{resume_header}
   \name{Marcus Lee Kai Yang}
-  \program{Bachelor (Hons) of Computer Science in Software Engineering}
+  \program{Master of Science (MSc) Computer Science}
   \contact{\href{mailto:marcustutorial@hotmail.com}{marcustutorial@hotmail.com} \hspace{2cm} \href{tel:+353871749365}{+353 (87) 174 9365} \hspace{2cm}\href{https://www.linkedin.com/in/geminimarcus}{LinkedIn} \hspace{2cm}\href{https://github.com/marcustut}{GitHub} }
 \end{resume_header}
 
 \begin{resume_section}{About Me}
   \begin{nospacetabbing}
 
-    \textbf{Technical Skills}  \= Rust, TypeScript, React, SQL, Go, C/C++, Python, Java, Unix/Linux\\*
+    \textbf{Technical Skills}  \= Rust, C/C++, SQL, TypeScript, React, Go, Python, Java, Unix/Linux\\*
     \textbf{Languages} \> Fluent in English and Chinese; Conversational Proficiency in Cantonese and Malay\\*
     \textbf{Interests} \> Programming, Basketball, Cinematography\\*
   \end{nospacetabbing}
@@ -114,28 +114,42 @@ urlcolor=MyDarkBlue}
 \begin{resume_section}{Work Experience}
   \begin{resume_employer}{Balaena Quant}{Infrastructure Engineer, Engineering Team}{Kuala Lumpur, MY}{October 2022 - August 2023}
     \item Built internal APIs in Rust for secret management, parameters tuning, etc. across trading bots.
-    \item Built libraries for interacting with exchanges' WebSocket and REST APIs such as Binance, ByBit, etc.
+    \item Built libraries for interacting with exchanges' WebSocket and REST APIs such as Binance, Bybit, etc.
     \item Built the deployment infrastructure and continuous deployment pipeline using Kubernetes and AWS.
-    \item Built a Rust library with bindings in Python for writing rule-based trading strategies that supports backtesting, paper trading, live trading on crypto exchanges.
+    \item Built a Rust library with bindings in Python for writing low to mid frequency trading strategies that supports backtesting, paper trading, live trading on crypto exchanges.
   \end{resume_employer}
 
   \begin{resume_employer}{Layer C}{Software Engineering Intern, Engineering Team}{Kuala Lumpur, MY}{June 2022 - November 2022}
-    \item Wrote lambdas in Go for automating internal operations as well as hardhat scripts to automate the smart contract operations
+    \item Wrote lambdas in Go for automating internal operations as well as hardhat scripts to automate smart contract operations.
     \item Wrote several Next.js apps for marketplace, staking, admin panel, NFT minting, etc.
-    \item Built the first MVP and helped acquiring first paying customer
-    \item Worked with designers to optimise UI/UX
+    \item Worked with UI/UX designers and built the first MVP and which helped acquiring first paying customer.
   \end{resume_employer}
 
   \begin{resume_employer}{LS Smart Machinery}{Full-Stack Software Engineer, Tech Team}{Kuala Lumpur, MY}{January 2021 - January 2022}
-    \item Designed the system infrastructure for a new e-commerce application
-    \item Managed a team of four software engineering interns throughout the project
-    \item Helped setting up the CI/CD pipeline through GitHub Actions and AWS
-    \item Built the backend in Go, frontend in React and GraphQL as the communication interface
+    \item Designed and implemented the system infrastructure from scratch for an e-commerce application.
+    \item Managed at most a team of four software engineering interns throughout the project.
+    \item Helped setting up the CI/CD pipeline through GitHub Actions and AWS.
+    \item Built the backend in Go, frontend in React and GraphQL as the communication interface.
   \end{resume_employer}
 \end{resume_section}
 
 
 \begin{resume_section}{Personal Projects}
+  \begin{resume_subsection}[(October 2023)]{\href{https://github.com/marcustut/orderbook}{Orderbook}}
+    \begin{subitems}
+      \item Local order book implementation in C++ with hooks and TUI visualiser, work in progress.
+      \item Supports streaming market data on Deribit's Options, Futures and Spot market via FIX44 connection.
+      \item Used CMake as the build system to support building as a binary or library.
+    \end{subitems}
+  \end{resume_subsection}
+
+  \begin{resume_subsection}[(September 2023)]{\href{https://github.com/cybotrade/tardis-rs}{tardis-rs}}
+    \begin{subitems}
+      \item Async Rust client bindings for tardis.dev and tardis machine server API.
+      \item Replays historical market data and stream live market data through async stream.
+    \end{subitems}
+  \end{resume_subsection}
+
   \begin{resume_subsection}[(April 2022)]{\href{https://github.com/marcustut/lightchaser}{LightChaser - Companion App for a Youth Camp}}
     \begin{subitems}
       \item A web app that provides on-screen interaction, real-time timer countdown, built with React and NextUI
@@ -143,20 +157,19 @@ urlcolor=MyDarkBlue}
     \end{subitems}
   \end{resume_subsection}
 
-  \begin{resume_subsection}[(October 2021 - March 2022)]{\href{https://github.com/marcustut/fyp}{SliGen - Online Slides Generator and Editor}}
-    \begin{subitems}
-      \item Built backend services for authentication, realtime document-syncing, url-shortening in Go and AWS Services
-      \item Implemented the frontend UI with React and using GraphQL as the communication interface
-    \end{subitems}
-  \end{resume_subsection}
+  % \begin{resume_subsection}[(October 2021 - March 2022)]{\href{https://github.com/marcustut/fyp}{SliGen - Online Slides Generator and Editor}}
+  %   \begin{subitems}
+  %     \item Built backend services for authentication, realtime document-syncing, url-shortening in Go and AWS Services
+  %     \item Implemented the frontend UI with React and using GraphQL as the communication interface
+  %   \end{subitems}
+  % \end{resume_subsection}
 
-
-  \begin{resume_subsection}[(October 2021 - November 2021)]{\href{https://github.com/marcustut/thebox}{TheBox Online Event}}
-    \begin{subitems}
-      \item Developed the backend in Go and PostgreSQL to support team registration, mission delegation and realtime game interaction. GraphQL is used as the communication interface
-      \item Implemented the frontend UI for event launching, central hub and leaderboard with React and THREE.js
-    \end{subitems}
-  \end{resume_subsection}
+  % \begin{resume_subsection}[(October 2021 - November 2021)]{\href{https://github.com/marcustut/thebox}{TheBox Online Event}}
+  %   \begin{subitems}
+  %     \item Developed the backend in Go and PostgreSQL to support team registration, mission delegation and realtime game interaction. GraphQL is used as the communication interface
+  %     \item Implemented the frontend UI for event launching, central hub and leaderboard with React and THREE.js
+  %   \end{subitems}
+  % \end{resume_subsection}
 
   \begin{resume_subsection}[(September 2021 - October 2021)]{\href{https://github.com/marcustut/summarize}{AI Text Summarizer}}
     \begin{subitems}
@@ -165,12 +178,12 @@ urlcolor=MyDarkBlue}
     \end{subitems}
   \end{resume_subsection}
 
-  \begin{resume_subsection}[(August 2021)]{\href{https://github.com/marcustut/mentu-lxs}{MentuLXS PWA}}
-    \begin{subitems}
-      \item Developed a Progressive Web App (PWA) for a church's online training camp
-      \item Used Go, Vue, TypeScript and Firebase for the development
-    \end{subitems}
-  \end{resume_subsection}
+  % \begin{resume_subsection}[(August 2021)]{\href{https://github.com/marcustut/mentu-lxs}{MentuLXS PWA}}
+  %   \begin{subitems}
+  %     \item Developed a Progressive Web App (PWA) for a church's online training camp
+  %     \item Used Go, Vue, TypeScript and Firebase for the development
+  %   \end{subitems}
+  % \end{resume_subsection}
 
   \begin{resume_subsection}[(May 2020 - June 2020)]{\href{https://github.com/marcustut/UnlockProject}{Unlock Youth Online Web Portal}}
     \begin{subitems}
@@ -181,62 +194,62 @@ urlcolor=MyDarkBlue}
 \end{resume_section}
 
 \begin{resume_section}{Activities and Competitions}
-  \begin{resume_subsection}[(May 2022)]{\href{https://www.youtube.com/watch?v=42n0z_U8jOs}{Introduction to Firebase}}
-    \begin{subitems}
-      \item Speaker for the workshop of 50 attendees
-      \item Introduced the audience to NoSQL databases through a practical example using Firebase Firestore
-      \item Workshop collaborated between TARUC Google Developer Student Club and Taylor's Agents of Tech society
-    \end{subitems}
-  \end{resume_subsection}
+  % \begin{resume_subsection}[(May 2022)]{\href{https://www.youtube.com/watch?v=42n0z_U8jOs}{Introduction to Firebase}}
+  %   \begin{subitems}
+  %     \item Speaker for the workshop of 50 attendees
+  %     \item Introduced the audience to NoSQL databases through a practical example using Firebase Firestore
+  %     \item Workshop collaborated between TARUC Google Developer Student Club and Taylor's Agents of Tech society
+  %   \end{subitems}
+  % \end{resume_subsection}
 
-  \begin{resume_subsection}[(April 2022)]{{Frontend Web Development with React}}
-    \begin{subitems}
-      \item Speaker for the workshop of 50 attendees
-      \item Introduced the audience to basic web development, JavaScript ES6 and React
-      \item Workshop collaborated between TARUC Computer Science Society and UTAR's Computer Society
-    \end{subitems}
-  \end{resume_subsection}
+  % \begin{resume_subsection}[(April 2022)]{{Frontend Web Development with React}}
+  %   \begin{subitems}
+  %     \item Speaker for the workshop of 50 attendees
+  %     \item Introduced the audience to basic web development, JavaScript ES6 and React
+  %     \item Workshop collaborated between TARUC Computer Science Society and UTAR's Computer Society
+  %   \end{subitems}
+  % \end{resume_subsection}
 
-  \begin{resume_subsection}[(April 2022)]{\href{https://drive.google.com/file/d/1WbO1FLOikfg-FQo-d5HuY8PkBBOHJtk-/view?usp=sharing}{Programming League National 2022}}
-    \begin{subitems}
-      \item Participated in the online preliminary round for competitive programming
-    \end{subitems}
-  \end{resume_subsection}
-  
-    \begin{resume_subsection}[(Jan 2022 - April 2022)]{{Weekly Leetcode Sessions}}
+  % \begin{resume_subsection}[(April 2022)]{\href{https://drive.google.com/file/d/1WbO1FLOikfg-FQo-d5HuY8PkBBOHJtk-/view?usp=sharing}{Programming League National 2022}}
+  %   \begin{subitems}
+  %     \item Participated in the online preliminary round for competitive programming
+  %   \end{subitems}
+  % \end{resume_subsection}
+
+  \begin{resume_subsection}[(Jan 2022 - April 2022)]{{Weekly Leetcode Sessions}}
     \begin{subitems}
       \item Co-hosted a one-hour coding session every Monday night with 10 to 15 members
       \item Guided members through a number of easy to medium Leetcode problems in C++
       \item Taught about the concepts of Big-O notation and methods to approach problems in an algorithmic way
     \end{subitems}
   \end{resume_subsection}
-  
-    \begin{resume_subsection}[(January 2022)]{\href{https://www.youtube.com/watch?v=m5MLaNMbtjM&t}{Firebase 101: Building your first application}}
-    \begin{subitems}
-      \item Speaker for the workshop of 30 attendees
-      \item Shared about the basic concepts of Firestore and guided the audience with a hands-on tutorial
-    \end{subitems}
-  \end{resume_subsection}
+
+  % \begin{resume_subsection}[(January 2022)]{\href{https://www.youtube.com/watch?v=m5MLaNMbtjM&t}{Firebase 101: Building your first application}}
+  %   \begin{subitems}
+  %     \item Speaker for the workshop of 30 attendees
+  %     \item Shared about the basic concepts of Firestore and guided the audience with a hands-on tutorial
+  %   \end{subitems}
+  % \end{resume_subsection}
 
   \begin{resume_subsection}[(Jan 2022 - September 2022)]{{TARUC's Google Developer Student Club}}
     \begin{subitems}
-      \item Served as one of the technical leads for one academic term
-      \item Contributed in brainstorming for improving members' overall technical capabilities
-      \item Hosted a public workshop and nine weekly Leetcode sessions with the members
+      \item Served as one of the technical leads for one academic term.
+      \item Contributed in brainstorming for improving members' overall technical capabilities.
+      \item Hosted numerous technical workshops and nine weekly Leetcode sessions.
     \end{subitems}
   \end{resume_subsection}
 
-  \begin{resume_subsection}[(March 2020 - April 2020)]{\href{https://drive.google.com/drive/folders/1PXG8UBWxGFG66U_oSWwOouJDr8cWGGAu?usp=sharing}{Google Code Jam 2020 \& Kick Start 2020}}
-    \begin{subitems}
-      \item Advanced to Round 1 in Code Jam and Round B in Kick Start
-    \end{subitems}
-  \end{resume_subsection}
+  % \begin{resume_subsection}[(March 2020 - April 2020)]{\href{https://drive.google.com/drive/folders/1PXG8UBWxGFG66U_oSWwOouJDr8cWGGAu?usp=sharing}{Google Code Jam 2020 \& Kick Start 2020}}
+  %   \begin{subitems}
+  %     \item Advanced to Round 1 in Code Jam and Round B in Kick Start
+  %   \end{subitems}
+  % \end{resume_subsection}
 
-  \begin{resume_subsection}[(March 2020)]{Programming League National 2020}
-    \begin{subitems}
-      \item Participated in the online preliminary round for competitive programming
-    \end{subitems}
-  \end{resume_subsection}
+  % \begin{resume_subsection}[(March 2020)]{Programming League National 2020}
+  %   \begin{subitems}
+  %     \item Participated in the online preliminary round for competitive programming
+  %   \end{subitems}
+  % \end{resume_subsection}
 
   \begin{resume_subsection}[(March 2019)]{CPUS Innovation \& Prototyping Competition 2019}
     \begin{subitems}
@@ -249,14 +262,14 @@ urlcolor=MyDarkBlue}
   \begin{resume_subsection}[Dublin, Ireland (2023--2024)]{University College Dublin}
     \begin{subitems}
       \item MSc Computer Science
-      \item Learning High Performance Computing, Numerical Algorithms, Big Data Programming and others
+      \item Learning High Performance Computing, Intro to Quantum Computing, Big Data Programming and others
     \end{subitems}
   \end{resume_subsection}
 
   \begin{resume_subsection}[Kuala Lumpur, MY (2019--2022)]{Tunku Abdul Rahman University College}
     \begin{subitems}
       \item Bachelor (Hons) of Computer Science in Software Engineering
-      \item CGPA: 3.83
+      \item Graduated with first-class honours, CGPA: 3.83
       \item Honours: President's List, Dean's List
     \end{subitems}
   \end{resume_subsection}
